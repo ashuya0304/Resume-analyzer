@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <textarea
+id="jobDescription"
+placeholder="Paste Job Description Here">
+</textarea>
+
+<button id="analyzeBtn">
+Analyze Resume
+</button>
+
+<input type="file" id="resume" accept=".pdf">
+
+<h2>ATS Score: <span id="score">0</span>%</h2>
+
+<h3>Matching Skills</h3>
+<ul id="matched"></ul>
+
+<h3>Missing Skills</h3>
+<ul id="missing"></ul>
+
+    <div class="container">
+
+        <h1>AI Resume Analyzer</h1>
+
+        <div class="card">
+
+            <label>Upload Resume (PDF)</label>
+            <input type="file" id="resume" accept=".pdf">
+            <label>Paste Job Description</label>
+
+            /*<textarea
+id="jobDescription"
+placeholder="Paste Job Description Here">
+</textarea>
+
+<button id="analyzeBtn">
+Analyze Resume
+</button>
+
+<input type="file" id="resume" accept=".pdf">
+
+<h2>ATS Score: <span id="score">0</span>%</h2>
+
+<h3>Matching Skills</h3>
+<ul id="matched"></ul>
+
+<h3>Missing Skills</h3>
+<ul id="missing"></ul>
+
+    <div class="container">
+
+        <h1>AI Resume Analyzer</h1>
+
+        <div class="card">
+
+            <label>Upload Resume (PDF)</label>
+            <input type="file" id="resume" accept=".pdf">
+            <label>Paste Job Description</label>
+
+            <textarea
+                id="jobDescription"
+                rows="10"
+                placeholder="Paste job description here..."
+            ></textarea>
+
+            <button id="analyzeBtn">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <div class="result card">
+
+            <h2>Analysis Result</h2>
+
+            <h3>ATS Score</h3>
+            <div id="score">0%</div>
+
+            <h3>Matched Skills</h3>
+            <ul id="matched"></ul>
+
+            <h3>Missing Skills</h3>
+            <ul id="missing"></ul>
+
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
