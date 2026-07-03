@@ -22,7 +22,7 @@ document
 
     const response =
     await fetch(
-        "http://localhost:3000/upload",
+        "https://resume-analyzer-rfhv.onrender.com",
         {
             method: "POST",
             body: formData
