@@ -1,28 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Resume Analyzer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <textarea
-id="jobDescription"
-placeholder="Paste Job Description Here">
-</textarea>
-
-<button id="analyzeBtn">
-Analyze Resume
-</button>
-
-<input type="file" id="resume" accept=".pdf">
-
-<h2>ATS Score: <span id="score">0</span>%</h2>
-
-<h3>Matching Skills</h3>
-<ul id="matched"></ul>
-
-<h3>Missing Skills</h3>
-<ul id="missing"></ul>
 
     <div class="container">
 
@@ -30,44 +14,20 @@ Analyze Resume
 
         <div class="card">
 
-            <label>Upload Resume (PDF)</label>
+            <label for="resume">Upload Resume (PDF)</label>
             <input type="file" id="resume" accept=".pdf">
-            <label>Paste Job Description</label>
 
-            /*<textarea
-id="jobDescription"
-placeholder="Paste Job Description Here">
-</textarea>
+            <br><br>
 
-<button id="analyzeBtn">
-Analyze Resume
-</button>
-
-<input type="file" id="resume" accept=".pdf">
-
-<h2>ATS Score: <span id="score">0</span>%</h2>
-
-<h3>Matching Skills</h3>
-<ul id="matched"></ul>
-
-<h3>Missing Skills</h3>
-<ul id="missing"></ul>
-
-    <div class="container">
-
-        <h1>AI Resume Analyzer</h1>
-
-        <div class="card">
-
-            <label>Upload Resume (PDF)</label>
-            <input type="file" id="resume" accept=".pdf">
-            <label>Paste Job Description</label>
+            <label for="jobDescription">Paste Job Description</label>
 
             <textarea
                 id="jobDescription"
                 rows="10"
                 placeholder="Paste job description here..."
             ></textarea>
+
+            <br><br>
 
             <button id="analyzeBtn">
                 Analyze Resume
@@ -92,7 +52,7 @@ Analyze Resume
 
     </div>
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
